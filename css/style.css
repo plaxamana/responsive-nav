@@ -70,7 +70,40 @@ li a:hover {
   background: #2E363D;
 }
 
-
 .filter-white {
   filter: invert(100%) sepia(13%) saturate(2%) hue-rotate(216deg) brightness(111%) contrast(101%);
+}
+
+@media (min-width: 500px) {
+  .open, 
+  .exit {
+    display: none;
+  }
+
+  header {}
+
+  nav {
+    visibility: unset;
+    background: none;
+    position: unset;
+    height: auto;
+  }
+
+  ul {
+    display: flex;
+    margin-top: auto;
+    width: auto;
+    float: right;
+    margin: 0;
+  }
+
+  li a {
+    color: #ADDBFF;
+    display: block;
+    padding: .75em;
+  }
+
+  .active a {
+    color: #FFF;
+  }
 }
