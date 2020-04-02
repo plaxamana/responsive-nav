@@ -25,6 +25,9 @@ nav {
   right: 0;
   height: 100vh;
   width: 40%;
+  transform: translateX(50%);
+  opacity: 0;
+  transition: all 300ms;
 }
 
 a.logo {
@@ -76,6 +79,8 @@ li a:hover {
 
 .open-nav {
   visibility: unset;
+  opacity: 1;
+  transform: translateX(0);
 }
 
 @media (min-width: 500px) {
@@ -89,6 +94,8 @@ li a:hover {
     background: none;
     position: unset;
     height: auto;
+    opacity: 1;
+    transform: translateX(0);
   }
 
   ul {
